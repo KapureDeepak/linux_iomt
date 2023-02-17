@@ -191,12 +191,12 @@
 			"LineInA", "INA2",
 			"LineInB", "INB1",
 			"LineInB", "INB2";
-		status = "okay";
+		status = "disabled";
 	};
 };
 
 &cameradev {
-	status = "okay";
+	status = "disabled";
 };
 
 &clk {
@@ -243,7 +243,7 @@
 	phy-reset-duration = <1>;
 	digi,phy-reset-in-suspend;
 	fsl,magic-packet;
-	status = "okay";
+	status = "disabled";
 
 	mdio {
 		#address-cells = <1>;
@@ -269,7 +269,7 @@
 };
 
 &gpu {
-	status = "okay";
+	status = "disabled";
 };
 
 /*
@@ -450,7 +450,7 @@
 		digi,dsi-lanes = <4>;
 		vdd1-supply = <&reg_5v_board>;
 		no-edid;
-		status = "okay";
+		status = "disabled";
 
 		port {
 			lt8912_1_in: endpoint {
@@ -528,7 +528,7 @@
 };
 
 &lcdif {
-	status = "okay";
+	status = "disabled";
 };
 
 /*
@@ -599,7 +599,7 @@
 &mipi_csi_1 {
 	#address-cells = <1>;
 	#size-cells = <0>;
-	status = "okay";
+	status = "disabled";
 
 	/* Camera 0  MIPI CSI-2 (CSIS0) */
 	port@0 {
@@ -615,7 +615,7 @@
 };
 
 &mipi_dsi {
-	status = "okay";
+	status = "disabled";
 
 	port@1 {
 		mipi_dsi_hdmi_out: endpoint {
@@ -657,7 +657,7 @@
 	assigned-clocks = <&clk IMX8MN_CLK_SAI2>;
 	assigned-clock-parents = <&clk IMX8MN_AUDIO_PLL1_OUT>;
 	assigned-clock-rates = <12288000>;
-	status = "okay";
+	status = "disabled";
 };
 
 /* Console */
@@ -693,7 +693,7 @@
 	//For DVK: version <= 2
 	//pinctrl-0 = <&pinctrl_uart3>, <&pinctrl_uart3_re_disable_v1_v2>;
 
-	status = "okay";
+	status = "disabled";
 };
 
 /* XBee 2 UART shared with the Cortex M7 */
@@ -734,7 +734,7 @@
 	 */
 	no-1-8-v;
 	cd-gpios = <&gpio2 12 GPIO_ACTIVE_HIGH>;
-	status = "okay";
+	status = "disabled";
 };
 
 /* IOMUX */
