@@ -77,35 +77,35 @@
 			gpios = <&gpio4 27 GPIO_ACTIVE_HIGH>;
 			linux,default-trigger = "heartbeat";
 			default-state = "on";
-		}
+		};
 		
 		led-1{
 			label = "lte_enable";
 			gpios = <&gpio2 1 GPIO_ACTIVE_HIGH>;
 			linux,default-trigger = "none";
 			default-state = "off";
-		}
+		};
 				
 		led-2{
 			label = "feedback";
 			gpios = <&gpio4 3 GPIO_ACTIVE_HIGH>;
 			linux,default-trigger = "none";
 			default-state = "on";
-		}
+		};
 
 		led-3{
 			label = "lan1_rst";
 			gpios = <&gpio4 2 GPIO_ACTIVE_HIGH>;
 			linux,default-trigger = "none";
 			default-state = "on";
-		}
+		};
 		
 		led-4{
 			label = "lan2_rst";
 			gpios = <&gpio4 1 GPIO_ACTIVE_HIGH>;
 			linux,default-trigger = "none";
 			default-state = "on";
-		}
+		};
 	};
 
 	/* fixed crystal dedicated to mcp2517fd */
