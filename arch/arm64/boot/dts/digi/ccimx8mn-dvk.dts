@@ -74,35 +74,35 @@
 		
 		led-0{
 			label = "sys_status";
-			gpios = <&gpio4 27 GPIO_ACTIVE_HIGH>;
+			gpios = <&gpio4 28 GPIO_ACTIVE_HIGH>;
 			linux,default-trigger = "heartbeat";
 			default-state = "on";
 		};
 		
 		led-1{
 			label = "lte_enable";
-			gpios = <&gpio2 1 GPIO_ACTIVE_HIGH>;
+			gpios = <&gpio3 1 GPIO_ACTIVE_HIGH>;
 			linux,default-trigger = "none";
 			default-state = "off";
 		};
 				
 		led-2{
 			label = "feedback";
-			gpios = <&gpio4 3 GPIO_ACTIVE_HIGH>;
+			gpios = <&gpio5 3 GPIO_ACTIVE_HIGH>;
 			linux,default-trigger = "none";
 			default-state = "on";
 		};
 
 		led-3{
 			label = "lan1_rst";
-			gpios = <&gpio4 2 GPIO_ACTIVE_HIGH>;
+			gpios = <&gpio5 2 GPIO_ACTIVE_HIGH>;
 			linux,default-trigger = "none";
 			default-state = "on";
 		};
 		
 		led-4{
 			label = "lan2_rst";
-			gpios = <&gpio4 1 GPIO_ACTIVE_HIGH>;
+			gpios = <&gpio5 1 GPIO_ACTIVE_HIGH>;
 			linux,default-trigger = "none";
 			default-state = "on";
 		};
