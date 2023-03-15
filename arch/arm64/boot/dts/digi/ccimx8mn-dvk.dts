@@ -73,7 +73,7 @@
 		compatible = "gpio-leds";
 		
 		led-0{
-			label = "sys_status";
+			label = "sys_led";
 			gpios = <&gpio4 28 GPIO_ACTIVE_HIGH>;
 			linux,default-trigger = "heartbeat";
 			default-state = "on";
@@ -87,24 +87,24 @@
 		};
 				
 		led-2{
-			label = "feedback";
+			label = "boot_feedback";
 			gpios = <&gpio5 3 GPIO_ACTIVE_HIGH>;
 			linux,default-trigger = "none";
 			default-state = "on";
 		};
 
 		led-3{
-			label = "lan1_rst";
+			label = "ipcc_enable";
 			gpios = <&gpio5 2 GPIO_ACTIVE_HIGH>;
 			linux,default-trigger = "none";
 			default-state = "on";
 		};
 		
 		led-4{
-			label = "lan2_rst";
+			label = "hl7_enable";
 			gpios = <&gpio5 1 GPIO_ACTIVE_HIGH>;
 			linux,default-trigger = "none";
-			default-state = "on";
+			default-state = "off";
 		};
 	};
 
